@@ -1,38 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Open+Sans:wght@800&family=Roboto:wght@900&display=swap");
+
 .App {
-  text-align: center;
+  background-color: aliceblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#products {
+  width: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition-duration: 0.5s;
+}
+#products:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
+}
+
+#productsMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 35px;
+}
+
+#name {
+  width: 225px;
+  font-size: x-large;
+}
+
+#name-rental {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#rental {
+  margin-top: 25px;
+}
+
+#availablity {
+  margin-left: 15px;
+}
+
+#summary {
+  text-align: center;
+  font-size: x-large;
+  width: 450px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#name-availablity {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none !important ;
+}
+.navbar {
+  font-family: "Licorice", cursive;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.Link {
+  margin-right: 55px;
+}
+#footer {
+  background-color: lavender;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#add {
   color: white;
+  width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+#cont-info {
+  color: white;
+  width: 175px;
+}
+#sum {
+  color: white;
+  width: 175px;
+  font-size: 15px;
+  font-weight: 100;
+}
+#address {
+  font-weight: 100;
+  font-size: small;
+}
+#cont {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+#info {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+#address {
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#follo {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+#follow-us {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+}
+#vmc {
+  margin-top: 200px;
+  margin-bottom: 150px;
+}
+
+#btn-camera {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+#main-login {
+  display: flex;
+  position: relative;
+  bottom: 55px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+}
+#login-page {
+  display: flex;
+  flex-direction: column;
+  width: 750px;
+
+  height: 500px;
+}
+
+#img-auth {
+  position: relative;
+  bottom: 45px;
+  width: 250px;
+  height: 250px;
+}
+
+#Adm-sip {
+  position: relative;
+  bottom: 45px;
+  font-size: xxx-large;
+  font-weight: 900;
+  color: rgb(255, 0, 0);
+}
+
+#err-img {
+  width: 100%;
 }
