@@ -19,7 +19,7 @@ function App() {
       <Switch>
 
       <Route path='/hiring_equipments/'>
-      <Error />
+      <Home />
   </Route>
 
         <Route exact path="/about">
