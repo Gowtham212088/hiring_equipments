@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/hiring_equipments/static/css/main.408bc34f.css",
-    "main.js": "/hiring_equipments/static/js/main.5ab79849.js",
+    "main.js": "/hiring_equipments/static/js/main.ccd508a7.js",
     "static/js/787.1008888e.chunk.js": "/hiring_equipments/static/js/787.1008888e.chunk.js",
     "index.html": "/hiring_equipments/index.html",
     "main.408bc34f.css.map": "/hiring_equipments/static/css/main.408bc34f.css.map",
-    "main.5ab79849.js.map": "/hiring_equipments/static/js/main.5ab79849.js.map",
+    "main.ccd508a7.js.map": "/hiring_equipments/static/js/main.ccd508a7.js.map",
     "787.1008888e.chunk.js.map": "/hiring_equipments/static/js/787.1008888e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.408bc34f.css",
-    "static/js/main.5ab79849.js"
+    "static/js/main.ccd508a7.js"
   ]
 }
