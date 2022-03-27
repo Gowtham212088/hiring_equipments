@@ -1,5 +1,5 @@
 import "./App.css";
-import { EQUIPMENT } from "./EQUIPMENT";
+// import { EQUIPMENT } from "./Equipment";
 import { Switch, Route } from "react-router-dom";
 import Navbar from "./Navbar";
 import Carosel from "./Home page/Carosel";
@@ -41,7 +41,7 @@ function App() {
           <LoginForm />{" "}
         </Route>
 
-        <Route path="/**">
+        <Route exact path="/**">
           {" "}
           <Error />{" "}
         </Route>
@@ -50,45 +50,45 @@ function App() {
   );
 }
 
-function ProductsMain() {
-  return (
-    <div id="productsMain">
-      {EQUIPMENT.map((product) => (
-        <Products
-          id={product.id}
-          name={product.name}
-          poster={product.poster}
-          rental={product.rental}
-          description={product.description}
-          availablity={product.availablity}
-        />
-      ))}
-    </div>
-  );
-}
+// function ProductsMain() {
+//   return (
+//     <div id="productsMain">
+//       {EQUIPMENT.map((product) => (
+//         <Products
+//           id={product.id}
+//           name={product.name}
+//           poster={product.poster}
+//           rental={product.rental}
+//           description={product.description}
+//           availablity={product.availablity}
+//         />
+//       ))}
+//     </div>
+//   );
+// }
 
-function Products({ id, name, poster, rental, description, availablity }) {
-  return (
-    <div id="products">
-      <img id="img" src={poster} alt={name} />
-      <div id="name-rental">
-        <h2 id="name"> {name} </h2>
+// function Products({ id, name, poster, rental, description, availablity }) {
+//   return (
+//     <div id="products">
+//       <img id="img" src={poster} alt={name} />
+//       <div id="name-rental">
+//         <h2 id="name"> {name} </h2>
 
-        <h2 id="rental"> {rental} </h2>
-      </div>
+//         <h2 id="rental"> {rental} </h2>
+//       </div>
 
-      <div id="availablity">
-        {availablity ? (
-          <h3 style={{ color: "#33cc00" }}> Available </h3>
-        ) : (
-          <h3 style={{ color: "#ff3300" }}> Un Available </h3>
-        )}
-      </div>
+//       <div id="availablity">
+//         {availablity ? (
+//           <h3 style={{ color: "#33cc00" }}> Available </h3>
+//         ) : (
+//           <h3 style={{ color: "#ff3300" }}> Un Available </h3>
+//         )}
+//       </div>
 
-      <p id="summary"> {description} </p>
-    </div>
-  );
-}
+//       <p id="summary"> {description} </p>
+//     </div>
+//   );
+// }
 
 function Home() {
   return (

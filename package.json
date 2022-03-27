@@ -2,7 +2,7 @@
   "name": "hiring_equipments",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://Gowtham212088.github.io/Rentify.git",
+  "homepage": "http://Gowtham212088.github.io/hiring_equipments",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
