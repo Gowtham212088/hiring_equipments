@@ -17,6 +17,11 @@ function App() {
       <Navbar />
 
       <Switch>
+
+      <Route path='/hiring_equipments/'>
+      <Error />
+  </Route>
+
         <Route exact path="/about">
           {" "}
           <About />{" "}
@@ -45,6 +50,9 @@ function App() {
           {" "}
           <Error />{" "}
         </Route>
+
+
+
       </Switch>
     </div>
   );
