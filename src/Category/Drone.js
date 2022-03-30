@@ -2,16 +2,31 @@ import React from "react";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
-import { Equipment_items } from "./Equipment_items";
+// import { Equipment_items } from "./Equipment_items";
+import { API } from "./Equipment_items";
+import { useEffect } from "react";
+import { useState } from "react";
+
 export default function DroneMain() {
- 
-const filterItems = Equipment_items.filter((product)=>{
-  return product.productType == "drone"
-})
+  const [equipment, setEquipment] = useState([]);
+
+  const getProduct = () => {
+    fetch("https://gowtham-hi.herokuapp.com/products/drone", {
+      method: "GET",
+    })
+      .then((data) => data.json())
+      .then((response) => setEquipment(response));
+  };
+
+  useEffect(() => getProduct(), []);
+
+  // const filterItems = equipment.filter((product)=>{
+  //   return product.productType === "drone"
+  // })
 
   return (
     <div id="productsMain">
-      {filterItems.map((elem) => (
+      {equipment.map((elem) => (
         <Drone
           id={elem.id}
           name={elem.name}

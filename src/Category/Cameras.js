@@ -2,16 +2,31 @@ import React from "react";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
-import { Equipment_items } from "./Equipment_items";
-export default function CameraMain() {
+// import { Equipment_items } from "./Equipment_items";
+import { API } from "./Equipment_items";
+import { useEffect } from "react";
+import { useState } from "react";
 
-  const filterItems = Equipment_items.filter((product)=>{
-    return product.productType == "camera"
-  })
+export default function CameraMain() {
+  const [equipment, setEquipment] = useState([]);
+
+  const getProduct = () => {
+    fetch("https://gowtham-hi.herokuapp.com/products/camera", {
+      method: "GET",
+    })
+      .then((data) => data.json())
+      .then((response) => setEquipment(response));
+  };
+
+  useEffect(() => getProduct(), []);
+
+  // const filterItems = equipment.filter((product)=>{
+  //   return product.productType === "camera"
+  // })
 
   return (
     <div id="productsMain">
-      {filterItems.map((product) => (
+      {equipment.map((product) => (
         <Camera
           id={product.id}
           name={product.name}

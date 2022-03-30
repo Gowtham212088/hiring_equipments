@@ -17,10 +17,9 @@ function App() {
       <Navbar />
 
       <Switch>
-
-      <Route path='/hiring_equipments/'>
-      <Home />
-  </Route>
+        <Route path="/hiring_equipments/">
+          <Home />
+        </Route>
 
         <Route exact path="/about">
           {" "}
@@ -50,53 +49,10 @@ function App() {
           {" "}
           <Error />{" "}
         </Route>
-
-
-
       </Switch>
     </div>
   );
 }
-
-// function ProductsMain() {
-//   return (
-//     <div id="productsMain">
-//       {EQUIPMENT.map((product) => (
-//         <Products
-//           id={product.id}
-//           name={product.name}
-//           poster={product.poster}
-//           rental={product.rental}
-//           description={product.description}
-//           availablity={product.availablity}
-//         />
-//       ))}
-//     </div>
-//   );
-// }
-
-// function Products({ id, name, poster, rental, description, availablity }) {
-//   return (
-//     <div id="products">
-//       <img id="img" src={poster} alt={name} />
-//       <div id="name-rental">
-//         <h2 id="name"> {name} </h2>
-
-//         <h2 id="rental"> {rental} </h2>
-//       </div>
-
-//       <div id="availablity">
-//         {availablity ? (
-//           <h3 style={{ color: "#33cc00" }}> Available </h3>
-//         ) : (
-//           <h3 style={{ color: "#ff3300" }}> Un Available </h3>
-//         )}
-//       </div>
-
-//       <p id="summary"> {description} </p>
-//     </div>
-//   );
-// }
 
 function Home() {
   return (
